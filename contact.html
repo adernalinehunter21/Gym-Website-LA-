@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 60px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 60%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+    .contact{
+          background-color:white;
+        opacity: 0.90;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        font-size: medium;
+        color: black;
+        padding: 20px;
+        margin-top: 11.5rem;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: fit-content;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <a href="index.html"><img src="img/gym.png" alt="Gym Logo"></a>
+            <div>Gym Website</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="importance.html">Importance Of Fitness</a></li>
+                <li><a href="nutrition.html">Importance Of Nutrition</a></li>
+                <li><a href="subscriptions.html">Subscriptions</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Contact Box for information of the website -->
+        <div class="contact">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit rerum est aspernatur, reiciendis, aut praesentium non assumenda dicta nostrum illum dignissimos laudantium optio? Voluptatum nesciunt debitis voluptate perspiciatis? Placeat?</p>
+            <p>Telephone Number: 080-595-3247</p>
+            <p>Email: info.gymwebsite.co</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit rerum est aspernatur, reiciendis, aut praesentium
+                non assumenda dicta nostrum illum dignissimos laudantium optio? Voluptatum nesciunt debitis voluptate perspiciatis?
+                Placeat?</p>
+            <p>Telephone Number: 080-595-3247</p>
+            <p>Email: info.gymwebsite.co</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit rerum est aspernatur, reiciendis, aut praesentium
+                non assumenda dicta nostrum illum dignissimos laudantium optio? Voluptatum nesciunt debitis voluptate perspiciatis?
+                Placeat?</p>
+            <p>Telephone Number: 080-595-3247</p>
+            <p>Email: info.gymwebsite.co</p>
+            <p>For Any Queries or Grievances you can reach out at :</p>
+            <p>email: info.gymwebsite.grievances.co | 080-9786-512</p>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn" onclick="alert('This is a single click event')">Call Us Now</button>
+            <button class="btn" ondblclick="alert('This is a double click event')">Email Us</button>
+        </div>
+    </header>
+    <script src="../Gym Website/js/script.js"></script>
+</body>
+</html>

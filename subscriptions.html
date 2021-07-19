@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 60px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 60%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 20px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+    .columns {
+        box-sizing: border-box;
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+  margin-top: 9.5rem;
+  background-color: white;
+  opacity: 0.90;
+  border-radius: 5px;
+}
+
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <a href="index.html"><img src="img/gym.png" alt="Gym Logo"></a>
+            <div>Gym Website</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="importance.html">Importance Of Fitness</a></li>
+                <li><a href="nutrition.html">Importance Of Nutrition</a></li>
+                <li><a href="subscriptions.html" class="active">Subscriptions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="columns">
+                <ul class="price">
+                    <li class="header">Basic</li>
+                    <li class="grey">$ 9.99 / year</li>
+                    <li>85 Days Access</li>
+                    <li>Personalized Meals</li>
+                    <li>Personal Trainer for 85 Days</li>
+                    <li>Nutritionists for 85 Days</li>
+                    <li class="grey"><a href="#" class="button" onclick="alert('Basic Subscription taken.')">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="columns">
+                <ul class="price">
+                    <li class="header" style="background-color:#04AA6D">Pro</li>
+                    <li class="grey">$ 24.99 / year</li>
+                    <li>195 Days Access</li>
+                    <li>Personalized Meals</li>
+                    <li>Personal Trainer for 195 Days</li>
+                    <li>Nutritionists for 195 Days</li>
+                    <li class="grey"><a href="#" class="button" onclick="alert('Pro Subscription taken.')">Sign Up</a></li>
+                </ul>
+            </div>
+            
+            <div class="columns">
+                <ul class="price">
+                    <li class="header">Premium</li>
+                    <li class="grey">$ 49.99 / year</li>
+                    <li>365 Days Access </li>
+                    <li>Personalized Meals</li>
+                    <li>Personal Trainer for 365 Days</li>
+                    <li>Nutritionists for 365 Days</li>
+                    <li class="grey"><a href="#" class="button" onclick="alert('Premium Subscription taken.')">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn" onclick="alert('This is a single click event')">Call Us Now</button>
+            <button class="btn"  ondblclick="alert('This is a double click event')">Email Us</button>
+        </div>
+    </header>
+    <script src="../Gym Website/js/script.js"></script>
+</body>
+
+</html>
